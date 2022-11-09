@@ -1,0 +1,1 @@
+podman run -it localhost/toolbox:latest

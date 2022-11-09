@@ -1,0 +1,1 @@
+sudo podman build  -t hurzelpurzel/arduino-ide:2.0.1 . 
