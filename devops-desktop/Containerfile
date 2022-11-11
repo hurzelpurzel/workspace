@@ -1,0 +1,6 @@
+FROM scottyhardy/docker-remote-desktop:latest
+
+
+RUN apt-get update && apt-get install -y xca wget
+RUN wget --no-check-certificate https://dbeaver.io/files/dbeaver-ce_latest_amd64.deb \
+    && apt install -y ./dbeaver-ce_latest_amd64.deb
