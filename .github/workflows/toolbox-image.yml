@@ -19,6 +19,6 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file toolbox/Containerfile --tag  $IMAGE_NAME:$TAG
+      run: docker build . --file toolbox/Containerfile --tag  ghcr.io/$OWNER/$IMAGE_NAME:$TAG
     - name: Push Image to registry
       run: docker push ghcr.io/$OWNER/$IMAGE_NAME:$TAG
