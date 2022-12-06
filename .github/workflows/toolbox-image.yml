@@ -12,7 +12,7 @@ jobs:
 
     runs-on: ubuntu-latest
     env:
-      TAG: $(date +%s)
+      TAG: latest
       IMAGE_NAME: toolbox
       OWNER: hurzelpurzel
 
