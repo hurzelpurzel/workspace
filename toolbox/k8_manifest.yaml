@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    app: hurzelpurzel-toolbox
+  name:  hurzelpurzel-toolbox
+spec:
+  containers:
+  - image: ghcr.io/hurzelpurzel/workspace/toolbox:main
+    name:  hurzelpurzel-toolbox
