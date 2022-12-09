@@ -1,4 +1,4 @@
-FROM wbitt/Network-Multitool
+FROM wbitt/network-multitool:latest
 
 RUN apk -y install openssl skopeo docker-ce
 RUN wget https://github.com/rs/curlie/releases/download/v1.6.9/curlie_1.6.9_linux_amd64.tar.gz -O - | tar xzf - \
