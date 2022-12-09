@@ -9,3 +9,9 @@ spec:
   - image: ghcr.io/hurzelpurzel/workspace/toolbox:main
     imagePullPolicy: Always
     name:  hurzelpurzel-toolbox
+    volumeMounts:
+    - name: container-dir
+      mountPath: /var/lib/containers
+  volumes:
+  - name: container-dir
+    emptyDir: {}
