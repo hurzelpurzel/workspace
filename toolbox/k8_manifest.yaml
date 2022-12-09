@@ -7,4 +7,5 @@ metadata:
 spec:
   containers:
   - image: ghcr.io/hurzelpurzel/workspace/toolbox:main
+    imagePullPolicy: Always
     name:  hurzelpurzel-toolbox
